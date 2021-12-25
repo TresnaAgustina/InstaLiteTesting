@@ -48,7 +48,7 @@
 }
 
 .username{
-    font-size: var(--fs_22);
+    font-size: var(--fs_18);
 }
 
 .edit{
@@ -64,6 +64,10 @@
     height: 90px;
 }
 
+.bio__{
+    font-size: var(--fs_14);
+}
+
 .detail__info{
     display: none;
 }
@@ -73,8 +77,8 @@
 }
 
 .user__profile_image{
-    width: 100px;
-    height:100px;
+    min-width: 70px;
+    min-height:70px;
     margin-right: 24px;
 }
 
