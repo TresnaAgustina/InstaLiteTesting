@@ -1,0 +1,34 @@
+
+/* ========== CSS VARIABLE ========== */
+
+:root{
+
+    /* ===== COLOR ===== */
+
+    --primary-color: #38E0EB;
+    --title-text-color: rgb(51, 51, 51);
+    --body-text-color: #6F6E6E;
+    --bg-color: #F6F8FA;
+    
+    /* ===== TYPOGRAPHY ===== */
+
+    /* FONT SIZE */
+    --fs_10:.625rem;
+    --fs_11:.6875rem;
+    --fs_12:.75rem;
+    --fs_14:.875rem;
+    --fs_16:1rem;
+    --fs_18:1.125rem;
+    --fs_22:1.375rem;
+    --fs_24:1.5rem;
+    --fs_26:1.625rem;
+    --fs_28:1.75rem;
+
+    /* FONT WEIGHT */
+    --fw_l:300;
+    --fw_r:400;
+    --fw_md:500;
+    --fw_sb:600;   
+
+}
+

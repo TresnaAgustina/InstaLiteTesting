@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/pages/Upload_Style.css">
+    <!-- Fontawesomes -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+
+    <nav class="navbar" id="navbar">
+        <div class="inner__container">
+            <h2 class="nav__logo">InstaLite</h2>
+
+            <div class="nav__items">
+                <a href="../index.html" class="nav__link"><span class="iconify" data-icon="ant-design:home-filled"></span></a>
+                <a href="Upload_Page.html" class="nav__link"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+                <a href="Explore_Page.html" class="nav__link"><span class="iconify" data-icon="ic:baseline-explore"></span></a>
+                <a href="" class="nav__link"><span class="iconify" data-icon="wpf:like"></span></a>
+                <a href="User_Page.html" class="nav__link"><span class="iconify" data-icon="bx:bxs-user"></span></a>
+            </div>
+
+            <img src="assets/img/navbar-img.svg" alt="User Profile" class="nav__img">
+        </div>
+
+        <!-- ===== Mobile Navbar ===== -->
+        <div class="m-nav__items">
+            <a href="../index.html" class="m-nav__link"><span class="iconify" data-icon="ant-design:home-filled"></span></a>
+            <a href="Upload_Page.html" class="m-nav__link"><span class="iconify" data-icon="carbon:add-filled"></span></a>
+            <a href="Explore_Page.html" class="m-nav__link"><span class="iconify" data-icon="ic:baseline-explore"></span></a>
+            <a href="" class="m-nav__link"><span class="iconify" data-icon="wpf:like"></span></a>
+            <a href="User_Page.html" class="m-nav__link"><span class="iconify" data-icon="bx:bxs-user"></span></a>
+        </div>
+    </nav>
+
+<!-- ========== MAIN CONTENT ========== -->
+<section class="upload__section">
+    <form action="" method="post" class="upload__container">
+        <h3>Upload Your Image</h3>
+
+        <div class="drag__area">
+            <div class="icon">
+                <i class="fas fa-images"></i>
+            </div>
+
+            <span class="header">Drag and Drop</span>
+            <input type="file" hidden>
+            <span class="header">Or <span class="button">browse</span></span>
+            <span class="support">Only Support: .jpeg, .jpg, and .png</span>
+        </div>
+    
+        <div class="caption__">
+            <label for="">Add Caption</label>
+            <input type="text" name="caption" id="">
+
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</section>
+
+
+<!-- MY JS -->
+<script src="assets/js/main/upload.js"></script>
+<!-- ===== Iconify Import ===== -->
+<script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/* Import Variable */
+@import url("../utils/Variable.css");
+
+/* Import Global Style */
+@import url("../base/Global_Style.css");
+
+@import url("../components/Navbar_Global_Style.css");
+
+/* ========== MAIN CONTENT ========= */
+
+/* ===== User Information ===== */
+.user-profile__section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+
+}
+
+
+.user__content{
+    min-width: 90%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail__user_data{
+    padding-bottom:12px;
+}
+
+.left__{
+    display: flex;
+}
+
+.user__name-detail{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.t{
+    width: 100%;
+    display:flex;
+    justify-content:flex-start;
+}
+
+.username{
+    font-size: var(--fs_22);
+}
+
+.edit{
+    margin-left: 22px;
+    background:var(--primary-color);
+    padding: 8px 10px;
+    border-radius: 5px;;
+}
+
+.user__bio{
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+}
+
+.detail__info{
+    display: none;
+}
+
+.edit__btn{
+    color: #fff;
+}
+
+.user__profile_image{
+    width: 100px;
+    height:100px;
+    margin-right: 24px;
+}
+
+.m-detail__info{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:0.4px solid #303030;
+    border-top:0.4px solid #303030;
+
+}
+
+.act__btn{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn1{
+    color: #303030;
+    font-size: var(--fs_18);
+}
+
+/* ====== Post ===== */
+
+.post__section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 9px 0;
+    padding-bottom: 50px;
+
+}
+
+.post__container{
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    place-items: center;
+    justify-content: center;
+    align-items: start;
+}
+
+.post__image{
+    width: 100%;
+    height: 100%;
+}
+
+.img__{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius:5px;
+}
+
+
+/* ===== Footer ===== */
+
+footer{
+    width: 100%;
+    height: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display:none;
+}
+
+.ct{
+    color: var(--primary-color);
+    font-weight: var(--fw_sb);
+}
+
+
+
+/* ========== RESPONSIVE ========== */
+@media screen and (min-width: 721px) {
+    /* Post */
+    .m-detail__info{
+        display:none;
+    }
+
+
+    .detail__info{
+        display:flex;
+        order: 1;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:8px;
+    }
+
+    .act__btn{
+        border-top: 0.5px solid #303030;
+        border-bottom: 0.5px solid #303030;
+        transition: .3s;
+    }
+
+    .left__{
+        width: 100%;
+        justify-content:center;
+    }
+
+    .user__profile_image{
+        width:130px;
+        height: 130px;
+        margin-right: 48px;
+    }
+
+}
+
+@media screen and (min-width: 850px){
+    .detail__user{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user__profile_image{
+        width:150px;
+        height: 150px;
+        
+    }
+
+    .act__btn{
+        min-width:65%;
+    }
+
+    .post__container{
+        min-width:60%;
+    }
+
+    .left__{
+        width: 100%;
+        justify-content:flex-end;
+    }
+  
+}
+
+@media screen and (min-width: 950px){
+    .post__container{
+        width:60%;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 0.2fr);
+        place-items: center;
+        justify-content:center;
+    }
+
+    .user__content{
+        width:80%;
+    }
+
+    .act__btn{
+        width:55%;
+    }
+
+    .user__data{
+        align-self: start;
+        padding: 0 300px;
+    }
+
+    .post__image{
+        min-width:320px;
+        min-height:320px;
+    }
+}
